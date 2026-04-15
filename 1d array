@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+/* Create a 5-elements one-dimensional array, this is the first array. Fill the array with an integer.
+Create another 5-elements one dimensional array, this is the second array. Fill the array with an integer. 
+Create a third 5-elements one dimensional array. The elements of which is the product of the elements of
+the first and second array according to corresponding index number. Sort in ascending order the elements of the third array. */
+
+int main (void){
+	
+	int a1[5];
+	int a2[5];
+	int a3[5];
+	int i, j, order;
+	
+	// This is asking to input value for the first array.
+	printf("Enter a set of 5 random numbers.\n");
+	
+	// This is for inputting the values for the first array.
+	for(i=0; i<5; i++){
+		scanf("%d", &a1[i]);
+	}
+	
+	// This is asking to input value for the second array.
+	printf("\nEnter another set of 5 random numbers.\n");
+	
+	// This is for inputting the values for the second array.
+	for(i=0; i<5; i++){
+		scanf("%d", &a2[i]);
+	}
+	
+	// This is for finding the product of a1 and a2 to get the values for a3.
+	for(i=0; i<5; i++){
+		a3[i]=a1[i]*a2[i];
+	}
+		
+	// This is for displaying the values for the first array.
+	printf("\nFirst Array: ");
+	for(i=0; i<5; i++)
+	printf("%d ", a1[i]);
+	
+	// This is for displaying the values for the second array.
+	printf("\nSecond Array: ");
+	for(i=0; i<5; i++)
+	printf("%d ", a2[i]);
+	
+	// This is for displaying the values for the third array.
+	printf("\nThird Array: ");
+	for(i=0; i<5; i++)
+	printf("%d ", a3[i]); // This should input the stored value of a3.
+	
+	// This is for sorting the third array in ascending form.
+	for(i=0; i<5; i++){
+	    for(j=i+1; j<5; j++){
+		    if(a3[i]>a3[j]){
+		    order=a3[i];
+	    	a3[i]=a3[j];
+	    	a3[j]=order;  
+    	    }
+        }
+	}
+	
+	// This is for displaying the third array in ascending form.
+	printf("\nThird Array (Ascending): ");
+	for(i=0; i<5; i++)
+	printf("%d ", a3[i]);
+	
+	return 0;	
+}
