@@ -1,5 +1,3 @@
-//Talidtid, Mark A. | BSIT 1-2N | COMP 003
-
 /*Create 2 two-dimensional array with number of rows ( r1 ) and number of columns ( c1 ) for the first array.
 Use r2 and c2 for the second array. The number of r1, r2, c1 and c2 shall be inputted by the user
 (note: r1 and r2 should be equal and c1 and c2 should be equal). Input the elements of the matrices. Print the 2 arrays.
