@@ -1,4 +1,3 @@
-//TALIDTID, MARK A. | BSIT 1-2N | COMP003
 #include<stdio.h>
 #include<conio.h>
 
@@ -10,8 +9,7 @@ struct PassengerSeat{ //Structure for Passenger Seat Location
     
 int main(void){
 	int ans; //Choice variable. Yes or No.
-	printf("Code by Mark Talidtid | BSIT 1-2N\n\n");
-	
+
 	//Program Menu
 	do{
 		printf("#########################\n#   POKLAHEY AIRLINES   #\n#########################\n\n");
