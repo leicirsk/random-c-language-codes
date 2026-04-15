@@ -1,5 +1,3 @@
-//Talidtid, Mark A. | BSIT 1-2N | COMP 003
-
 /*Create two-dimensional array with number of rows ( r ) and number of columns ( c ).
 The number of r and c shall be inputted by the user. Input the elements of the matrix or array.
 Get the highest element from the array. Print the array and the highest element.*/
